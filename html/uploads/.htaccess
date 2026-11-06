@@ -1,0 +1,10 @@
+# 上传目录：禁止脚本解析（讲义第 7.3 节）
+#
+# 即使上传校验被绕过，文件也无法作为 PHP 执行。
+# 这是「存储目录不可执行」的最小实现。
+<FilesMatch "\.(php|phtml|phar|php[0-9])$">
+    Require all denied
+</FilesMatch>
+
+# 关闭目录列表
+Options -Indexes

@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# 本地环境
+.env
+.env.*
+!.env.example
+
+# 运行时产物
+*.log
+
+# 上传目录内容不纳入版本管理（保留目录结构）
+html/uploads/*
+!html/uploads/.gitkeep
+!html/uploads/.htaccess

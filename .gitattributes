@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+# 部署脚本在 Linux 上执行，强制 LF
+*.sh text eol=lf
+*.conf text eol=lf
+*.php text eol=lf
+
+# 二进制文件不做转换
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
